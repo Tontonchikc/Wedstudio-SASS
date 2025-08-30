@@ -402,17 +402,6 @@ html {
   margin-right: auto;
 }
 
-.hero__text {
-  color: #FFF;
-  text-align: center;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 0.96px;
-  position: absolute;
-}
-
 .hero__button {
   border-radius: 4px;
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -426,6 +415,12 @@ html {
   margin-right: auto;
   position: relative;
   overflow: hidden;
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.96px;
 }
 
 .hero__button:hover {
@@ -455,6 +450,7 @@ html {
           animation-iteration-count: infinite;
   -webkit-animation-direction: inherit;
           animation-direction: inherit;
+  z-index: 1;
 }
 
 .hero__button:hover::after {
@@ -472,7 +468,7 @@ html {
   padding-bottom: 94px;
 }
 
-.about-list {
+.about__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -482,12 +478,12 @@ html {
   gap: 23px;
 }
 
-.about-item {
+.about__item {
   width: 285px;
   background-size: 70px 70px;
 }
 
-.about-item::before {
+.about__item::before {
   background-size: 70px 70px;
   display: block;
   height: 120px;
@@ -498,27 +494,27 @@ html {
   margin-bottom: 30px;
 }
 
-.about-item:nth-child(1)::before {
+.about__item:nth-child(1)::before {
   content: "";
   background-image: url("./images/antenna.webp");
 }
 
-.about-item:nth-child(2)::before {
+.about__item:nth-child(2)::before {
   content: "";
   background-image: url("./images/clock.webp");
 }
 
-.about-item:nth-child(3)::before {
+.about__item:nth-child(3)::before {
   content: "";
   background-image: url("./images/diagram.webp");
 }
 
-.about-item:nth-child(4)::before {
+.about__item:nth-child(4)::before {
   content: "";
   background-image: url("./images/astronaut.webp");
 }
 
-.about-title {
+.about__title {
   color: #212121;
   font-size: 14px;
   font-style: normal;
@@ -530,7 +526,7 @@ html {
   margin-bottom: 10px;
 }
 
-.about-text {
+.about__text {
   color: #757575;
   font-size: 14px;
   font-style: normal;
@@ -546,21 +542,7 @@ html {
   background: #FFF;
 }
 
-.doing-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: wrap;
-      -ms-flex: wrap;
-          flex: wrap;
-  gap: 30px;
-}
-
-.doing-item {
-  position: relative;
-}
-
-.doing-title {
+.doing__title {
   color: #212121;
   text-align: center;
   font-size: 36px;
@@ -571,11 +553,25 @@ html {
   margin-bottom: 50px;
 }
 
-.doing-img {
+.doing__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: wrap;
+      -ms-flex: wrap;
+          flex: wrap;
+  gap: 30px;
+}
+
+.doing__item {
+  position: relative;
+}
+
+.doing__img {
   width: 370px;
 }
 
-.doing-text {
+.doing__text {
   color: #fff;
   font-family: Roboto;
   font-size: 14px;
@@ -604,7 +600,7 @@ html {
   background: #F5F4FA;
 }
 
-.team-title {
+.team__title {
   color: #212121;
   text-align: center;
   font-size: 36px;
@@ -615,7 +611,7 @@ html {
   margin-bottom: 50px;
 }
 
-.team-list {
+.team__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -625,7 +621,7 @@ html {
   gap: 30px;
 }
 
-.team-item {
+.team__item {
   padding-bottom: 30px;
   border-radius: 0px 0px 4px 4px;
   background: #FFF;
@@ -633,14 +629,14 @@ html {
           box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
-.team-img {
+.team__img {
   width: 270px;
   height: 260px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
 
-.team-subtitle {
+.team__subtitle {
   color: #212121;
   text-align: center;
   font-size: 16px;
@@ -651,7 +647,7 @@ html {
   margin-top: 30px;
 }
 
-.team-text {
+.team__text {
   color: #757575;
   text-align: center;
   font-size: 16px;
@@ -663,7 +659,7 @@ html {
   margin-bottom: 16px;
 }
 
-.team-socials {
+.team__socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -675,7 +671,7 @@ html {
           justify-content: center;
 }
 
-.team-link {
+.team__link {
   color: white;
   border-radius: 50%;
   display: -webkit-box;
@@ -690,7 +686,7 @@ html {
   font-size: 20px;
 }
 
-.team-link:hover {
+.team__link:hover {
   background-color: #2196F3;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
@@ -700,14 +696,14 @@ html {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-svg {
+.team__svg {
   width: 44px;
   height: 44px;
   fill: #AFB1B8;
   padding: 12px 12px;
 }
 
-.team-svg:hover {
+.team__svg:hover {
   fill: #FFFFFF;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
