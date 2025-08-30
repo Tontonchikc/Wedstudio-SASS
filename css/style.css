@@ -120,17 +120,16 @@ html {
   border-bottom: 1px solid #ECECEC;
 }
 
-.header-span {
-  color: #2196F3;
-  font-family: Raleway;
-  font-size: 26px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.78px;
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: wrap;
+      -ms-flex: wrap;
+          flex: wrap;
 }
 
-.header-logo {
+.header__logo {
   color: #000;
   font-family: Raleway;
   font-size: 26px;
@@ -141,16 +140,17 @@ html {
   margin: 0 93px 0 0;
 }
 
-.header-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: wrap;
-      -ms-flex: wrap;
-          flex: wrap;
+.header__span {
+  color: #2196F3;
+  font-family: Raleway;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
 }
 
-.header-list {
+.header__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -163,8 +163,7 @@ html {
   gap: 50px;
 }
 
-.header-portfolio,
-.header-contacts {
+.header__portfolio, .header__contacts {
   color: #212121;
   font-size: 14px;
   font-style: normal;
@@ -174,19 +173,7 @@ html {
   position: relative;
 }
 
-.header-studio {
-  color: #2196F3;
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.28px;
-  position: relative;
-}
-
-.header-portfolio:hover,
-.header-contacts:hover {
+.header__portfolio:hover, .header__portfolio:hover, .header__contacts:hover, .header__contacts:hover {
   color: #2196F3;
   font-family: Roboto;
   font-size: 14px;
@@ -202,8 +189,7 @@ html {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-portfolio::after,
-.header-contacts::after {
+.header__portfolio::after, .header__portfolio::after, .header__contacts::after, .header__contacts::after {
   content: "";
   height: 4px;
   border-radius: 2px;
@@ -213,9 +199,32 @@ html {
   top: 45px;
   left: 0;
   width: 100%;
+  -webkit-transition-property: background-color, color, fill, border;
+  transition-property: background-color, color, fill, border;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transform: scale(100%, 100%);
+          transform: scale(100%, 100%);
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
 }
 
-.header-studio::after {
+.header__portfolio:hover::after, .header__portfolio:hover::after, .header__contacts:hover::after, .header__contacts:hover::after {
+  display: block;
+}
+
+.header__studio {
+  color: #2196F3;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  position: relative;
+}
+
+.header__studio::after {
   content: "";
   height: 4px;
   border-radius: 2px;
@@ -228,20 +237,7 @@ html {
   width: 100%;
 }
 
-.header-portfolio:hover::after,
-.header-contacts:hover::after {
-  display: block;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-property: background-color, color, fill, border;
-  transition-property: background-color, color, fill, border;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transform: scale(100%, 100%);
-          transform: scale(100%, 100%);
-}
-
-.header-connection {
+.header__connection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -255,7 +251,7 @@ html {
   gap: 30px;
 }
 
-.header-think {
+.header__think {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -268,7 +264,7 @@ html {
   gap: 10px;
 }
 
-.header-think:hover {
+.header__think:hover {
   color: #2196F3;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
@@ -278,21 +274,41 @@ html {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-svg-envelope {
+.header__svg {
+  fill: #757575;
+}
+
+.header__svg-envelope {
   width: 16px;
   height: 12px;
 }
 
-.header-svg-smartphone {
+.header__svg-envelope:hover {
+  fill: #2196F3;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-property: background-color, color, fill, border;
+  transition-property: background-color, color, fill, border;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header__svg-envelope:hover > .header__email {
+  color: #2196F3;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-property: background-color, color, fill, border;
+  transition-property: background-color, color, fill, border;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header__svg-smartphone {
   width: 10px;
   height: 16px;
 }
 
-.header-svg {
-  fill: #757575;
-}
-
-.header-svg-envelope:hover {
+.header__svg-smartphone:hover {
   fill: #2196F3;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
@@ -302,7 +318,7 @@ html {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-svg-envelope:hover > .header-email {
+.header__svg-smartphone:hover > .header__number {
   color: #2196F3;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
@@ -312,37 +328,7 @@ html {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-think:hover > .header-svg-envelope {
-  fill: #2196F3;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-property: background-color, color, fill, border;
-  transition-property: background-color, color, fill, border;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-think:hover > .header-svg-smartphone {
-  fill: #2196F3;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-property: background-color, color, fill, border;
-  transition-property: background-color, color, fill, border;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-svg-envelope:hover > .header-number {
-  color: #2196F3;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-property: background-color, color, fill, border;
-  transition-property: background-color, color, fill, border;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-email {
+.header__email {
   color: #757575;
   font-family: Roboto;
   font-size: 14px;
@@ -352,7 +338,7 @@ html {
   letter-spacing: 0.28px;
 }
 
-.header-email:hover {
+.header__email:hover {
   color: #2196F3;
   font-family: Roboto;
   font-size: 14px;
@@ -368,7 +354,7 @@ html {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-number {
+.header__number {
   color: #757575;
   font-size: 14px;
   font-style: normal;
@@ -377,7 +363,7 @@ html {
   letter-spacing: 0.28px;
 }
 
-.header-number:hover {
+.header__number:hover {
   color: #2196F3;
   font-size: 14px;
   font-style: normal;
@@ -401,7 +387,7 @@ html {
   background-repeat: no-repeat;
 }
 
-.hero-title {
+.hero__title {
   color: #FFF;
   text-align: center;
   font-family: Roboto;
@@ -416,10 +402,7 @@ html {
   margin-right: auto;
 }
 
-.hero-button {
-  border-radius: 4px;
-  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+.hero__text {
   color: #FFF;
   text-align: center;
   font-size: 16px;
@@ -427,6 +410,13 @@ html {
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.96px;
+  position: absolute;
+}
+
+.hero__button {
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   background: #2196F3;
   width: 216px;
   height: 50px;
@@ -438,7 +428,7 @@ html {
   overflow: hidden;
 }
 
-.hero-button:hover {
+.hero__button:hover {
   background: #0c7edb;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
@@ -448,17 +438,7 @@ html {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-button:hover::after {
-  background-color: #2196F3;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-property: background-color, color, fill, border;
-  transition-property: background-color, color, fill, border;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.hero-button::after {
+.hero__button::after {
   content: "";
   width: 50px;
   height: 50px;
@@ -475,6 +455,16 @@ html {
           animation-iteration-count: infinite;
   -webkit-animation-direction: inherit;
           animation-direction: inherit;
+}
+
+.hero__button:hover::after {
+  background-color: #2196F3;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-property: background-color, color, fill, border;
+  transition-property: background-color, color, fill, border;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .about {
