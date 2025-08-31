@@ -12,6 +12,10 @@
     z-index: 5;
 }
 
+.is-hidden .modal {
+    transform: scale(0.5) translate(0, 500px)
+}
+
 .modal {
     background-color: #FFFFFF;
     width: 528px;
@@ -23,11 +27,10 @@
     transition-property: transform, opacity;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
-.is-hidden .modal {
-    transform: scale(0.5) translate(0, 500px)
-}
+
 
 .modal-close-button {
     position: absolute;
