@@ -1,5 +1,5 @@
 .footer {
-    background: #2F303A;
+    background:$background-color;
     padding-top: 60px;
     padding-bottom: 60px;
 
@@ -9,7 +9,7 @@
     }
 
     &__logo {
-        color: #FFF;
+        color: $accent-color;
         font-family: Raleway;
         font-size: 26px;
         font-style: normal;
@@ -20,7 +20,7 @@
 
 
     &__span {
-        color: #2196F3;
+        color: $link-color;
         font-family: Raleway;
         font-size: 26px;
         font-style: normal;
@@ -31,7 +31,7 @@
     }
 
     &__text {
-        color: #FFF;
+        color: $accent-color;
         font-family: Roboto;
         font-size: 14px;
         font-style: normal;
@@ -43,7 +43,7 @@
     }
 
     &__email {
-        color: rgba(255, 255, 255, 0.60);
+        color: $second-text-color;
         font-family: Roboto;
         font-size: 14px;
         font-style: normal;
@@ -55,7 +55,7 @@
     }
 
     &__number {
-        color: rgba(255, 255, 255, 0.60);
+        color: $second-text-color;
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
@@ -90,7 +90,7 @@
     }
 
     &__link {
-        color: white;
+        color: $accent-color;
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -101,7 +101,7 @@
 
 
         &:hover {
-            background-color: #2196F3;
+            background-color: $link-color;
             transition-duration: 250ms;
             transition-property: background-color, color, fill, border;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -122,7 +122,7 @@
     }
 
     &__title {
-        color: #FFF;
+        color: $accent-color;
         font-family: Roboto;
         font-size: 14px;
         font-style: normal;
@@ -155,7 +155,7 @@
 
     &__button {
         border-radius: 4px;
-        background: #2196F3;
+        background: $link-color;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
         width: 200px;
         height: 50px;
@@ -173,7 +173,7 @@
     }
 
     &__button-text {
-        color: #FFF;
+        color: $accent-color;
         text-align: center;
         font-family: Roboto;
         font-size: 16px;
@@ -187,6 +187,6 @@
         width: 24px;
         height: 24px;
         flex-shrink: 0;
-        fill: #FFFFFF;
+        fill: $svg-fill;
     }
 }

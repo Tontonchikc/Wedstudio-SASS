@@ -464,7 +464,7 @@ html {
 }
 
 .footer {
-  background: #2F303A;
+  background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -478,7 +478,7 @@ html {
 }
 
 .footer__logo {
-  color: #FFF;
+  color: #fff;
   font-family: Raleway;
   font-size: 26px;
   font-style: normal;
@@ -488,7 +488,7 @@ html {
 }
 
 .footer__span {
-  color: #2196F3;
+  color: #2196f3;
   font-family: Raleway;
   font-size: 26px;
   font-style: normal;
@@ -498,7 +498,7 @@ html {
 }
 
 .footer__text {
-  color: #FFF;
+  color: #fff;
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -566,7 +566,7 @@ html {
 }
 
 .footer__link {
-  color: white;
+  color: #fff;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -582,7 +582,7 @@ html {
 }
 
 .footer__link:hover {
-  background-color: #2196F3;
+  background-color: #2196f3;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-property: background-color, color, fill, border;
@@ -603,7 +603,7 @@ html {
 }
 
 .footer__title {
-  color: #FFF;
+  color: #fff;
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -654,7 +654,7 @@ html {
 
 .footer__button {
   border-radius: 4px;
-  background: #2196F3;
+  background: #2196f3;
   -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   width: 200px;
@@ -678,7 +678,7 @@ html {
 }
 
 .footer__button-text {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: Roboto;
   font-size: 16px;

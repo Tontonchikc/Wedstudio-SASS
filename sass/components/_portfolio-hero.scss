@@ -1,5 +1,5 @@
 .hero {
-    background: #FFF;
+    background: $accent-color;
     padding-top: 94px;
     padding-bottom: 94px;
 
@@ -11,7 +11,7 @@
     }
 
     &__button {
-        color: #212121;
+        color: $title-color;
         text-align: center;
         font-family: Roboto;
         font-size: 16px;
@@ -30,8 +30,8 @@
 
         &:hover {
             border-radius: 4px;
-            background: #2196F3;
-            color: #FFF;
+            background: $link-color;
+            color: $accent-color;
             box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 
 
@@ -50,7 +50,7 @@
     &__element {
         flex-basis: calc(((100% - 60px * 2)) / 3);
         border: 1px solid #EEE;
-        background: #FFF;
+        background: $accent-color;
         padding-bottom: 20px;
         position: relative;
         transition-duration: 250ms;
@@ -88,7 +88,7 @@
     }
 
     &__overlay-text {
-        color: #FFF;
+        color: $accent-color;
         font-family: Roboto;
         font-size: 18px;
         font-style: normal;
@@ -102,7 +102,7 @@
     }
 
     &__title {
-        color: #212121;
+        color: $title-color;
         font-family: Roboto;
         font-size: 18px;
         font-style: normal;
@@ -113,7 +113,7 @@
     }
 
     &__text {
-        color: #757575;
+        color: $text-color;
         font-family: Roboto;
         font-size: 16px;
         font-style: normal;
@@ -123,8 +123,10 @@
         margin-bottom: 20px;
     }
 
-    &__element:hover>&__overlay {
+
+}   
+
+.hero__element:hover>.hero__overlay {
         opacity: 1;
         transform: translate(0, 0);
     }
-}

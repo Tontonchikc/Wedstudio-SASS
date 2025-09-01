@@ -3,7 +3,7 @@
     background: #FFF;
 
     &__title {
-        color: #212121;
+        color: $title-color;
         text-align: center;
         font-size: 36px;
         font-style: normal;
@@ -28,7 +28,7 @@
     }
 
     &__text {
-        color: #fff;
+        color: $accent-color;
         font-family: Roboto;
         font-size: 14px;
         font-style: normal;
