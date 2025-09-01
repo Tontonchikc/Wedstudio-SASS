@@ -2,160 +2,223 @@
     padding-top: 24px;
     padding-bottom: 25px;
     border-bottom: 1px solid #ECECEC;
+
+    &__logo {
+        color: #000;
+        font-family: Raleway;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.78px;
+        margin: 0 93px 0 0;
+    }
+
+    &__span {
+        color: #2196F3;
+        font-family: Raleway;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.78px;
+    }
+
+    &__nav {
+        display: flex;
+        flex: wrap;
+    }
+
+
+    &__list {
+        display: flex;
+        flex: wrap;
+        align-items: center;
+        gap: 50px;
+    }
+
+    &__studio,
+    &__contacts {
+        color: #212121;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.28px;
+        position: relative;
+
+        &:hover,
+        &:hover {
+            color: #2196F3;
+            font-family: Roboto;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.28px;
+            transition-duration: 250ms;
+            transition-property: background-color, color, fill, border;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        &::after,
+        &::after {
+            content: "";
+            height: 4px;
+            border-radius: 2px;
+            background: #2196F3;
+            display: none;
+            position: absolute;
+            top: 45px;
+            left: 0;
+            width: 100%;
+        }
+
+        &:hover::after,
+        &:hover::after {
+            display: block;
+            transition-duration: 250ms;
+            transition-property: background-color, color, fill, border;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transform: scale(100%, 100%);
+        }
+
+    }
+
+
+    &__portfolio {
+        color: #2196F3;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.28px;
+        position: relative;
+
+        &::after {
+            content: "";
+            height: 4px;
+            border-radius: 2px;
+            background: #2196F3;
+            position: absolute;
+            top: 45px;
+            left: 0;
+            width: 72px;
+            display: block;
+        }
+    }
+
+    &__connection {
+        display: flex;
+        flex: wrap;
+        align-items: center;
+        margin-left: 318px;
+        gap: 30px;
+    }
+
+    &__think {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__svg {
+        fill: #757575;
+    }
+
+    &__svg-envelope {
+        width: 16px;
+        height: 12px;
+
+        &:hover {
+            fill: #2196F3;
+            transition-duration: 250ms;
+            transition-property: background-color, color, fill, border;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+
+    &__svg-smartphone {
+        width: 10px;
+        height: 16px;
+
+        &:hover {
+            fill: #2196F3;
+            transition-duration: 250ms;
+            transition-property: background-color, color, fill, border;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+    }
+
+    &__email {
+        color: #757575;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.28px;
+        transition-duration: 250ms;
+        transition-property: background-color, color, fill, border;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover {
+            color: #2196F3;
+        }
+
+    }
+
+    &__number {
+        color: #757575;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.28px;
+        transition-duration: 250ms;
+        transition-property: background-color, color, fill, border;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover {
+            color: #2196F3;
+        }
+    }
+
 }
 
-.header-span {
-    color: #2196F3;
-    font-family: Raleway;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.78px;
-}
-
-.header-logo {
-    color: #000;
-    font-family: Raleway;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.78px;
-    margin: 0 93px 0 0;
-}
-
-.header-nav {
-    display: flex;
-    flex: wrap;
-}
-
-.header-list {
-    display: flex;
-    flex: wrap;
-    align-items: center;
-    gap: 50px;
-}
 
 
 
-.header-studio,
-.header-contacts {
-    color: #212121;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.28px;
-    position: relative;
-}
-
-.header-portfolio {
-    color: #2196F3;
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.28px;
-    position: relative;
-}
-
-.header-studio:hover,
-.header-contacts:hover {
-    color: #2196F3;
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.28px;
-    transition-duration: 250ms;
-    transition-property: background-color, color, fill, border;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-studio::after,
-.header-contacts::after {
-    content: "";
-    height: 4px;
-    border-radius: 2px;
-    background: #2196F3;
-    display: none;
-    position: absolute;
-    top: 45px;
-    left: 0;
-    width: 100%;
-}
-
-.header-portfolio::after {
-    content: "";
-    height: 4px;
-    border-radius: 2px;
-    background: #2196F3;
-    position: absolute;
-    top: 45px;
-    left: 0;
-    width: 72px;
-    display: block;
-
-
-}
-
-.header-studio:hover::after,
-.header-contacts:hover::after {
-    display: block;
-    transition-duration: 250ms;
-    transition-property: background-color, color, fill, border;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transform: scale(100%, 100%);
-}
 
 
 
-.header-connection {
-    display: flex;
-    flex: wrap;
-    align-items: center;
-    margin-left: 318px;
-    gap: 30px;
-}
 
-.header-think {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
 
-.header-think:hover {
-    color: #2196F3;
-    transition-duration: 250ms;
-    transition-property: background-color, color, fill, border;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.header-svg-envelope {
-    width: 16px;
-    height: 12px;
-}
 
-.header-svg-smartphone {
-    width: 10px;
-    height: 16px;
-}
 
-.header-svg {
-    fill: #757575;
 
-}
 
-.header-svg-envelope:hover {
-    fill: #2196F3;
-    transition-duration: 250ms;
-    transition-property: background-color, color, fill, border;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .header-svg-envelope:hover>.header-email {
     color: #2196F3;
@@ -164,66 +227,10 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-think:hover>.header-svg-envelope {
-    fill: #2196F3;
-    transition-duration: 250ms;
-    transition-property: background-color, color, fill, border;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.header-think:hover>.header-svg-smartphone {
-    fill: #2196F3;
-    transition-duration: 250ms;
-    transition-property: background-color, color, fill, border;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 .header-svg-envelope:hover>.header-number {
     color: #2196F3;
-    transition-duration: 250ms;
-    transition-property: background-color, color, fill, border;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-email {
-    color: #757575;
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.28px;
-}
-
-.header-email:hover {
-    color: #2196F3;
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.28px;
-    transition-duration: 250ms;
-    transition-property: background-color, color, fill, border;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-number {
-    color: #757575;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.28px;
-}
-
-.header-number:hover {
-    color: #2196F3;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.28px;
     transition-duration: 250ms;
     transition-property: background-color, color, fill, border;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
