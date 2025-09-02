@@ -68,6 +68,18 @@ html {
   scroll-behavior: smooth;
 }
 
+.doing__title, .team__title, .regular__title {
+  color: #212121;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  margin-bottom: 50px;
+}
+
 @-webkit-keyframes move_after {
   0% {
     top: -20px;
@@ -141,7 +153,7 @@ html {
 }
 
 .header__span {
-  color: #2196F3;
+  color: #2196f3;
   font-family: Raleway;
   font-size: 26px;
   font-style: normal;
@@ -174,7 +186,7 @@ html {
 }
 
 .header__portfolio:hover, .header__portfolio:hover, .header__contacts:hover, .header__contacts:hover {
-  color: #2196F3;
+  color: #2196f3;
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -193,7 +205,7 @@ html {
   content: "";
   height: 4px;
   border-radius: 2px;
-  background: #2196F3;
+  background: #2196f3;
   display: none;
   position: absolute;
   top: 45px;
@@ -214,7 +226,7 @@ html {
 }
 
 .header__studio {
-  color: #2196F3;
+  color: #2196f3;
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -228,7 +240,7 @@ html {
   content: "";
   height: 4px;
   border-radius: 2px;
-  background: #2196F3;
+  background: #2196f3;
   position: absolute;
   top: 45px;
   left: 0;
@@ -265,7 +277,7 @@ html {
 }
 
 .header__think:hover {
-  color: #2196F3;
+  color: #2196f3;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-property: background-color, color, fill, border;
@@ -284,7 +296,7 @@ html {
 }
 
 .header__svg-envelope:hover {
-  fill: #2196F3;
+  fill: #FFFFFF;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-property: background-color, color, fill, border;
@@ -294,7 +306,7 @@ html {
 }
 
 .header__svg-envelope:hover > .header__email {
-  color: #2196F3;
+  color: #2196f3;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-property: background-color, color, fill, border;
@@ -319,7 +331,7 @@ html {
 }
 
 .header__svg-smartphone:hover > .header__number {
-  color: #2196F3;
+  color: #2196f3;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-property: background-color, color, fill, border;
@@ -336,22 +348,16 @@ html {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
-}
-
-.header__email:hover {
-  color: #2196F3;
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.28px;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-property: background-color, color, fill, border;
   transition-property: background-color, color, fill, border;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header__email:hover {
+  color: #2196f3;
 }
 
 .header__number {
@@ -364,7 +370,7 @@ html {
 }
 
 .header__number:hover {
-  color: #2196F3;
+  color: #2196f3;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -379,16 +385,16 @@ html {
 }
 
 .hero {
-  background-color: #2F303A;
+  background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), color-stop(10%, rgba(47, 48, 58, 0.4))), url("./images/peoples_meeting.webp");
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) 10%), url("./images/peoples_meeting.webp");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), color-stop(10%, rgba(47, 48, 58, 0.4))), url("../../images/peoples_meeting.webp");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) 10%), url("../../images/peoples_meeting.webp");
   background-repeat: no-repeat;
 }
 
 .hero__title {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: Roboto;
   font-size: 44px;
@@ -406,7 +412,7 @@ html {
   border-radius: 4px;
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  background: #2196F3;
+  background: #2196f3;
   width: 216px;
   height: 50px;
   margin-top: 30px;
@@ -415,7 +421,7 @@ html {
   margin-right: auto;
   position: relative;
   overflow: hidden;
-  color: #FFF;
+  color: #fff;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -454,7 +460,7 @@ html {
 }
 
 .hero__button:hover::after {
-  background-color: #2196F3;
+  background-color: #2196f3;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-property: background-color, color, fill, border;
@@ -496,22 +502,22 @@ html {
 
 .about__item:nth-child(1)::before {
   content: "";
-  background-image: url("./images/antenna.webp");
+  background-image: url("../../images/antenna.webp");
 }
 
 .about__item:nth-child(2)::before {
   content: "";
-  background-image: url("./images/clock.webp");
+  background-image: url("../../images/clock.webp");
 }
 
 .about__item:nth-child(3)::before {
   content: "";
-  background-image: url("./images/diagram.webp");
+  background-image: url("../../images/diagram.webp");
 }
 
 .about__item:nth-child(4)::before {
   content: "";
-  background-image: url("./images/astronaut.webp");
+  background-image: url("../../images/astronaut.webp");
 }
 
 .about__title {
@@ -540,17 +546,6 @@ html {
 .doing {
   padding-bottom: 94px;
   background: #FFF;
-}
-
-.doing__title {
-  color: #212121;
-  text-align: center;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1.08px;
-  margin-bottom: 50px;
 }
 
 .doing__list {
@@ -600,17 +595,6 @@ html {
   background: #F5F4FA;
 }
 
-.team__title {
-  color: #212121;
-  text-align: center;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1.08px;
-  margin-bottom: 50px;
-}
-
 .team__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -624,7 +608,7 @@ html {
 .team__item {
   padding-bottom: 30px;
   border-radius: 0px 0px 4px 4px;
-  background: #FFF;
+  background: #fff;
   -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 }
@@ -717,18 +701,6 @@ html {
   padding: 94px;
 }
 
-.regular__title {
-  color: #212121;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1.08px;
-  margin-bottom: 50px;
-}
-
 .regular__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -750,8 +722,8 @@ html {
 }
 
 .regular__image:hover {
-  border: 1px solid #2196F3;
-  fill: #2196F3;
+  border: 1px solid #2196f3;
+  fill: #2196f3;
   cursor: pointer;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;

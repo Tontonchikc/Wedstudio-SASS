@@ -2,7 +2,7 @@
     background-color: $background-color;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40) 10%), url("./images/peoples_meeting.webp");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40) 10%), url("../../images/peoples_meeting.webp");
     background-repeat: no-repeat;
 
     &__title {
@@ -16,7 +16,7 @@
         letter-spacing: 2.64px;
         text-transform: uppercase;
         width: 696px;
-
+        
         margin-left: auto;
         margin-right: auto;
     }
