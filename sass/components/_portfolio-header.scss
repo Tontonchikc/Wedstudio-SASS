@@ -46,6 +46,7 @@
         line-height: normal;
         letter-spacing: 0.28px;
         position: relative;
+        @extend %transition;
 
         &:hover,
         &:hover {
@@ -56,9 +57,7 @@
             font-weight: 500;
             line-height: normal;
             letter-spacing: 0.28px;
-            transition-duration: 250ms;
-            transition-property: background-color, color, fill, border;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
         }
 
         &::after,
@@ -77,9 +76,6 @@
         &:hover::after,
         &:hover::after {
             display: block;
-            transition-duration: 250ms;
-            transition-property: background-color, color, fill, border;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             transform: scale(100%, 100%);
         }
 
@@ -131,24 +127,22 @@
     &__svg-envelope {
         width: 16px;
         height: 12px;
+        @extend %transition;
 
         &:hover {
             fill: $svg-hover-fill;
-            transition-duration: 250ms;
-            transition-property: background-color, color, fill, border;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
         }
     }
 
     &__svg-smartphone {
         width: 10px;
         height: 16px;
+        @extend %transition;
 
         &:hover {
             fill: $svg-hover-fill;
-            transition-duration: 250ms;
-            transition-property: background-color, color, fill, border;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
         }
 
     }
@@ -161,9 +155,7 @@
         font-weight: 500;
         line-height: normal;
         letter-spacing: 0.28px;
-        transition-duration: 250ms;
-        transition-property: background-color, color, fill, border;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @extend %transition;
 
         &:hover {
             color: $link-color;
@@ -178,9 +170,7 @@
         font-weight: 500;
         line-height: normal;
         letter-spacing: 0.28px;
-        transition-duration: 250ms;
-        transition-property: background-color, color, fill, border;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @extend %transition;
 
         &:hover {
             color: $link-color;
@@ -192,16 +182,12 @@
 
 .header-svg-envelope:hover>.header-email {
     color: #2196F3;
-    transition-duration: 250ms;
-    transition-property: background-color, color, fill, border;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition;
 }
 
 
 
 .header-svg-envelope:hover>.header-number {
     color: #2196F3;
-    transition-duration: 250ms;
-    transition-property: background-color, color, fill, border;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition;
 }

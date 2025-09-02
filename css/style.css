@@ -80,6 +80,29 @@ html {
   margin-bottom: 50px;
 }
 
+.about__text, .team__text {
+  color: #757575;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.header__portfolio, .header__contacts, .header__think, .header__svg-envelope, .header__svg-smartphone, .header__email, .header__number, .header__svg-envelope:hover > .header__email, .header__svg-envelope:hover > .header__number, .hero__button, .team__link, .team__svg, .regular__image, .footer__link, .modal, .modal-input, .modal-button {
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-property: background-color, color, fill, border, opacity, -webkit-transform;
+  transition-property: background-color, color, fill, border, opacity, -webkit-transform;
+  transition-property: background-color, color, fill, border, transform, opacity;
+  transition-property: background-color, color, fill, border, transform, opacity, -webkit-transform;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team__svg, .footer__svg {
+  width: 44px;
+  height: 44px;
+  padding: 12px 12px;
+}
+
 @-webkit-keyframes move_after {
   0% {
     top: -20px;
@@ -193,12 +216,6 @@ html {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-property: background-color, color, fill, border;
-  transition-property: background-color, color, fill, border;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header__portfolio::after, .header__portfolio::after, .header__contacts::after, .header__contacts::after {
@@ -211,14 +228,8 @@ html {
   top: 45px;
   left: 0;
   width: 100%;
-  -webkit-transition-property: background-color, color, fill, border;
-  transition-property: background-color, color, fill, border;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transform: scale(100%, 100%);
           transform: scale(100%, 100%);
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
 }
 
 .header__portfolio:hover::after, .header__portfolio:hover::after, .header__contacts:hover::after, .header__contacts:hover::after {
@@ -278,12 +289,6 @@ html {
 
 .header__think:hover {
   color: #2196f3;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-property: background-color, color, fill, border;
-  transition-property: background-color, color, fill, border;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header__svg {
@@ -297,22 +302,6 @@ html {
 
 .header__svg-envelope:hover {
   fill: #FFFFFF;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-property: background-color, color, fill, border;
-  transition-property: background-color, color, fill, border;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header__svg-envelope:hover > .header__email {
-  color: #2196f3;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-property: background-color, color, fill, border;
-  transition-property: background-color, color, fill, border;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header__svg-smartphone {
@@ -322,22 +311,6 @@ html {
 
 .header__svg-smartphone:hover {
   fill: #2196F3;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-property: background-color, color, fill, border;
-  transition-property: background-color, color, fill, border;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header__svg-smartphone:hover > .header__number {
-  color: #2196f3;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-property: background-color, color, fill, border;
-  transition-property: background-color, color, fill, border;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header__email {
@@ -348,12 +321,6 @@ html {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-property: background-color, color, fill, border;
-  transition-property: background-color, color, fill, border;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header__email:hover {
@@ -376,12 +343,14 @@ html {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-property: background-color, color, fill, border;
-  transition-property: background-color, color, fill, border;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header__svg-envelope:hover > .header__email {
+  color: #2196F3;
+}
+
+.header__svg-envelope:hover > .header__number {
+  color: #2196F3;
 }
 
 .hero {
@@ -431,12 +400,6 @@ html {
 
 .hero__button:hover {
   background: #0c7edb;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-property: background-color, color, fill, border;
-  transition-property: background-color, color, fill, border;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero__button::after {
@@ -461,12 +424,6 @@ html {
 
 .hero__button:hover::after {
   background-color: #2196f3;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-property: background-color, color, fill, border;
-  transition-property: background-color, color, fill, border;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .about {
@@ -533,10 +490,7 @@ html {
 }
 
 .about__text {
-  color: #757575;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.42px;
   width: 270px;
@@ -632,11 +586,8 @@ html {
 }
 
 .team__text {
-  color: #757575;
   text-align: center;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
   line-height: normal;
   letter-spacing: 0.48px;
   margin-top: 10px;
@@ -672,29 +623,14 @@ html {
 
 .team__link:hover {
   background-color: #2196F3;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-property: color, fill;
-  transition-property: color, fill;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team__svg {
-  width: 44px;
-  height: 44px;
   fill: #AFB1B8;
-  padding: 12px 12px;
 }
 
 .team__svg:hover {
   fill: #FFFFFF;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-property: background-color, color, fill;
-  transition-property: background-color, color, fill;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .regular {
@@ -725,12 +661,6 @@ html {
   border: 1px solid #2196f3;
   fill: #2196f3;
   cursor: pointer;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-property: background-color, color, fill, border;
-  transition-property: background-color, color, fill, border;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer {
@@ -853,19 +783,10 @@ html {
 
 .footer__link:hover {
   background-color: #2196f3;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-property: background-color, color, fill, border;
-  transition-property: background-color, color, fill, border;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer__svg {
-  width: 44px;
-  height: 44px;
   fill: #FFFFFF;
-  padding: 12px 12px;
 }
 
 .footer__form-box {
@@ -987,11 +908,6 @@ html {
   z-index: 5;
 }
 
-.is-hidden .modal {
-  -webkit-transform: scale(0.5) translate(0, 500px);
-          transform: scale(0.5) translate(0, 500px);
-}
-
 .modal {
   background-color: #FFFFFF;
   width: 528px;
@@ -1001,14 +917,11 @@ html {
   border-radius: 4px;
   -webkit-transform: scale(1) translate(0, 0);
           transform: scale(1) translate(0, 0);
-  -webkit-transition-property: opacity, -webkit-transform;
-  transition-property: opacity, -webkit-transform;
-  transition-property: transform, opacity;
-  transition-property: transform, opacity, -webkit-transform;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden .modal {
+  -webkit-transform: scale(0.5) translate(0, 500px);
+          transform: scale(0.5) translate(0, 500px);
 }
 
 .modal-close-button {
@@ -1079,12 +992,6 @@ html {
 
 .modal-input:hover {
   border: 1px solid #2196F3;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-property: background-color, color, fill, border;
-  transition-property: background-color, color, fill, border;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-comment::-webkit-input-placeholder {
@@ -1175,12 +1082,6 @@ html {
 
 .modal-button:hover {
   background-color: #188CE8;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-property: background-color, color, fill, border;
-  transition-property: background-color, color, fill, border;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-svg-person {

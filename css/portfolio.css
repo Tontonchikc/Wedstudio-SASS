@@ -68,6 +68,23 @@ html {
   scroll-behavior: smooth;
 }
 
+.header__studio, .header__contacts, .header__svg-envelope, .header__svg-smartphone, .header__email, .header__number, .header-svg-envelope:hover > .header-email, .header-svg-envelope:hover > .header-number, .hero__button, .hero__element, .hero__overlay, .footer__link {
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-property: background-color, color, fill, border, opacity, -webkit-transform;
+  transition-property: background-color, color, fill, border, opacity, -webkit-transform;
+  transition-property: background-color, color, fill, border, transform, opacity;
+  transition-property: background-color, color, fill, border, transform, opacity, -webkit-transform;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__svg {
+  width: 44px;
+  height: 44px;
+  padding: 12px 12px;
+}
+
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
@@ -135,12 +152,6 @@ html {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-property: background-color, color, fill, border;
-  transition-property: background-color, color, fill, border;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header__studio::after, .header__studio::after, .header__contacts::after, .header__contacts::after {
@@ -157,12 +168,6 @@ html {
 
 .header__studio:hover::after, .header__studio:hover::after, .header__contacts:hover::after, .header__contacts:hover::after {
   display: block;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-property: background-color, color, fill, border;
-  transition-property: background-color, color, fill, border;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transform: scale(100%, 100%);
           transform: scale(100%, 100%);
 }
@@ -228,12 +233,6 @@ html {
 
 .header__svg-envelope:hover {
   fill: #2196F3;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-property: background-color, color, fill, border;
-  transition-property: background-color, color, fill, border;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header__svg-smartphone {
@@ -243,12 +242,6 @@ html {
 
 .header__svg-smartphone:hover {
   fill: #2196F3;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-property: background-color, color, fill, border;
-  transition-property: background-color, color, fill, border;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header__email {
@@ -259,12 +252,6 @@ html {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-property: background-color, color, fill, border;
-  transition-property: background-color, color, fill, border;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header__email:hover {
@@ -278,12 +265,6 @@ html {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-property: background-color, color, fill, border;
-  transition-property: background-color, color, fill, border;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header__number:hover {
@@ -292,22 +273,10 @@ html {
 
 .header-svg-envelope:hover > .header-email {
   color: #2196F3;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-property: background-color, color, fill, border;
-  transition-property: background-color, color, fill, border;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-svg-envelope:hover > .header-number {
   color: #2196F3;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-property: background-color, color, fill, border;
-  transition-property: background-color, color, fill, border;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero {
@@ -343,14 +312,6 @@ html {
   height: 38px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-property: background-color, color, fill, border, -webkit-box-shadow;
-  transition-property: background-color, color, fill, border, -webkit-box-shadow;
-  transition-property: background-color, color, fill, border, box-shadow;
-  transition-property: background-color, color, fill, border, box-shadow, -webkit-box-shadow;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero__button:hover {
@@ -378,12 +339,6 @@ html {
   background: #fff;
   padding-bottom: 20px;
   position: relative;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-property: background-color, color, fill, border;
-  transition-property: background-color, color, fill, border;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero__element:hover {
@@ -405,12 +360,6 @@ html {
   padding: 64px 23px;
   opacity: 0;
   background-color: rgba(33, 150, 243, 0.9);
-  -webkit-transition-property: opacity, -webkit-transform;
-  transition-property: opacity, -webkit-transform;
-  transition-property: opacity, transform;
-  transition-property: opacity, transform, -webkit-transform;
-  -webkit-transition-duration: 300ms;
-          transition-duration: 300ms;
   -webkit-transform: translate(0, 150px);
           transform: translate(0, 150px);
 }
@@ -583,19 +532,10 @@ html {
 
 .footer__link:hover {
   background-color: #2196f3;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-property: background-color, color, fill, border;
-  transition-property: background-color, color, fill, border;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer__svg {
-  width: 44px;
-  height: 44px;
   fill: #FFFFFF;
-  padding: 12px 12px;
 }
 
 .footer__form-box {

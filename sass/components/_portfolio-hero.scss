@@ -24,9 +24,7 @@
         width: 112px;
         height: 38px;
         flex-shrink: 0;
-        transition-duration: 250ms;
-        transition-property: background-color, color, fill, border, box-shadow;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @extend %transition;
 
         &:hover {
             border-radius: 4px;
@@ -53,9 +51,7 @@
         background: $accent-color;
         padding-bottom: 20px;
         position: relative;
-        transition-duration: 250ms;
-        transition-property: background-color, color, fill, border;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @extend %transition;
 
         &:hover {
             box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
@@ -77,8 +73,7 @@
         padding: 64px 23px;
         opacity: 0;
         background-color: rgba(33, 150, 243, 0.90);
-        transition-property: opacity, transform;
-        transition-duration: 300ms;
+        @extend %transition;
         transform: translate(0, 150px);
 
         &__:hover {
@@ -124,9 +119,9 @@
     }
 
 
-}   
+}
 
 .hero__element:hover>.hero__overlay {
-        opacity: 1;
-        transform: translate(0, 0);
-    }
+    opacity: 1;
+    transform: translate(0, 0);
+}

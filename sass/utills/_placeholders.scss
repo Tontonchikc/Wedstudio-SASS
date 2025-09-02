@@ -10,13 +10,20 @@
     margin-bottom: 50px;
 }
 
-%li-titles {
-            color: $title-color;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: 0.42px;
-        text-transform: uppercase;
-        
+%li-text {
+    color: $text-color;
+    font-style: normal;
+    font-weight: 400;
+}
+
+%transition {
+    transition-duration: 250ms;
+    transition-property: background-color, color, fill, border, transform, opacity;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+%socials-svg {
+    width: 44px;
+    height: 44px;
+    padding: 12px 12px;
 }
