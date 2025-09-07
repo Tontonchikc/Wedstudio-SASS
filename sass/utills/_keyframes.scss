@@ -25,3 +25,30 @@
         left: -20px;
     }
 }
+
+@keyframes move_top {
+    0% {
+        bottom: 16px;
+        right: 16px;
+    }
+
+    25% {
+        bottom: 17px;
+        right: 14px;
+    }
+
+    50% {
+        bottom: 17px;
+        right: 18px;
+    }
+
+    75% {
+        bottom: 14px;
+        right: 18px;
+    }
+
+    100% {
+        bottom: 14px;
+        right: 16px;
+    }
+}

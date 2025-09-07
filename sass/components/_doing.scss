@@ -8,9 +8,7 @@
     }
 
     &__list {
-        display: flex;
-        flex: wrap;
-        gap: 30px;
+        @include flex-position($space: 30px);
     }
 
     &__item {

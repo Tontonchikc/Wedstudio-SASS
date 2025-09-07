@@ -4,9 +4,8 @@
 
 
     &__list {
-        display: flex;
-        flex: wrap;
-        gap: 23px;
+        @include flex-position($space: 23px, $wrap: nowrap);
+
     }
 
     &__item {

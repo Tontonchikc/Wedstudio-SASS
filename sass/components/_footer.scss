@@ -4,8 +4,7 @@
     padding-bottom: 60px;
 
     &__section {
-        display: flex;
-        flex-wrap: wrap;
+        @include flex-position();
     }
 
     &__logo {
@@ -64,8 +63,7 @@
     }
 
     &__box {
-        display: flex;
-        flex-direction: column;
+        @include flex-position($direction: column);
         margin-left: 70px;
     }
 

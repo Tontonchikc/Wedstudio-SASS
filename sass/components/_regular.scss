@@ -7,9 +7,7 @@
 
 
     &__list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
+        @include flex-position($space: 30px, $wrap: wrap);
     }
 
     &__image {

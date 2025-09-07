@@ -25,16 +25,13 @@
     }
 
     &__nav {
-        display: flex;
-        flex: wrap;
+        @include flex-position();
     }
 
 
     &__list {
-        display: flex;
-        flex: wrap;
-        align-items: center;
-        gap: 50px;
+        @include flex-position($space: 50px);
+
     }
 
     &__studio,
@@ -106,18 +103,13 @@
     }
 
     &__connection {
-        display: flex;
-        flex: wrap;
-        align-items: center;
+        @include flex-position($space: 30px);
         margin-left: 318px;
-        gap: 30px;
+
     }
 
     &__think {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
+        @include flex-position($space: 10px);
     }
 
     &__svg {

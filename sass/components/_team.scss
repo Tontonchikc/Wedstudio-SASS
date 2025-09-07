@@ -9,9 +9,7 @@
     }
 
     &__list {
-        display: flex;
-        flex: wrap;
-        gap: 30px;
+        @include flex-position($space: 30px);
     }
 
     &__item {
@@ -50,18 +48,14 @@
     }
 
     &__socials {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        justify-content: center;
+        @include flex-position($space: 10px);
+
     }
 
     &__link {
         color: white;
         border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+       @include flex-position();
         font-size: 20px;
         @extend %transition;
 

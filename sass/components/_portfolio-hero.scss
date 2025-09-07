@@ -4,10 +4,7 @@
     padding-bottom: 94px;
 
     &__list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 30px;
+        @include flex-position($space: 30px);
     }
 
     &__button {
@@ -38,9 +35,7 @@
     }
 
     &__gallery {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
+        @include flex-position($space: 30px);
         margin-top: 50px;
     }
 
