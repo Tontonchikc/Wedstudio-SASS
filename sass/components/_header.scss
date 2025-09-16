@@ -1,7 +1,17 @@
 .header {
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     border-bottom: 1px solid #ECECEC;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
 
 
     &__nav {
@@ -11,12 +21,21 @@
     &__logo {
         color: #000;
         font-family: Raleway;
-        font-size: 26px;
-        font-style: normal;
+        font-size: 24px;
+        letter-spacing: 0.03em;
         font-weight: 700;
         line-height: normal;
-        letter-spacing: 0.78px;
-        margin: 0 93px 0 0;
+
+
+        @media screen and (min-width: 768px) {
+
+        }
+
+        @media screen and (min-width: 1280px) {
+            font-size: 26px;
+            letter-spacing: 0.78px;
+            margin: 0 93px 0 0;
+        }
     }
 
     &__span {
