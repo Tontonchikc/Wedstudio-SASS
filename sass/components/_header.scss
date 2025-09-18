@@ -11,6 +11,7 @@
     @media screen and (min-width: 1280px) {
         padding-top: 24px;
         padding-bottom: 25px;
+
     }
 
 
@@ -19,7 +20,7 @@
     }
 
     &__logo {
-        color: #000;
+        color: $link-color;
         font-family: Raleway;
         font-size: 24px;
         letter-spacing: 0.03em;
@@ -27,51 +28,80 @@
         line-height: normal;
 
 
+
         @media screen and (min-width: 768px) {
+            letter-spacing: 0.03em;
 
         }
 
         @media screen and (min-width: 1280px) {
             font-size: 26px;
             letter-spacing: 0.78px;
-            margin: 0 93px 0 0;
+
         }
     }
 
     &__span {
-        color: $link-color;
+        color: #000;
         font-family: Raleway;
-        font-size: 26px;
-        font-style: normal;
+        font-size: 24px;
+        letter-spacing: 0.03em;
         font-weight: 700;
         line-height: normal;
-        letter-spacing: 0.78px;
+        margin-right: 276px;
+
+        @media screen and (min-width: 768px) {
+            letter-spacing: 0.03em;
+
+            margin-right: 87px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            font-size: 26px;
+            letter-spacing: 0.78px;
+            margin-right: 91px;
+        }
     }
 
+
+
     &__list {
-        @include flex-position($space: 50px);
+        display: none;
+
+        @media screen and (min-width: 768px) {
+            @include flex-position($space: 50px);
+
+        }
+
+        @media screen and (min-width: 1280px) {
+            @include flex-position($space: 50px);
+        }
     }
 
     &__portfolio,
     &__contacts {
-        color: $title-color;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        letter-spacing: 0.28px;
-        position: relative;
+        display: none;
         @extend %transition;
+
+        @media screen and (min-width: 768px) {
+            font-weight: 500;
+            font-size: 14px;
+            letter-spacing: 0.02em;
+            color: $title-color;
+            position: relative;
+            display: block;
+        }
+
+        @media screen and (min-width: 1280px) {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.28px;
+        }
 
         &:hover,
         &:hover {
             color: $link-color;
-            font-family: Roboto;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-            letter-spacing: 0.28px;
         }
 
         &::after,
@@ -98,12 +128,22 @@
     &__studio {
         color: $link-color;
         font-family: Roboto;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        letter-spacing: 0.28px;
         position: relative;
+
+        @media screen and (min-width: 768px) {
+            font-weight: 500;
+            font-size: 14px;
+            letter-spacing: 0.02em;
+            color: $title-color;
+            position: relative;
+            display: block;
+            color: $link-color;
+        }
+
+        @media screen and (min-width: 1280px) {
+            letter-spacing: 0.28px;
+            color: $link-color;
+        }
 
         &::after {
             content: "";
@@ -122,15 +162,34 @@
     }
 
     &__connection {
-        @include flex-position($space: 30px);
-        margin-left: 318px;
+        display: none;
+
+
+        @media screen and (min-width: 768px) {
+            @include flex-position($space: 10px, $direction: column);
+            margin-left: 96px;
+
+        }
+
+        @media screen and (min-width: 1280px) {
+            margin-left: 315px;
+            @include flex-position($space: 30px, $direction: row);
+        }
+
 
     }
 
     &__think {
-        @include flex-position($space: 10px);
+        display: none;
         @extend %transition;
 
+        @media screen and (min-width: 768px) {
+            @include flex-position($space: 8px);
+        }
+
+        @media screen and (min-width: 1280px) {
+            @include flex-position($space: 10px);
+        }
 
         &:hover {
             color: $link-color;
@@ -143,13 +202,23 @@
     }
 
     &__svg-envelope {
-        width: 16px;
-        height: 12px;
+
         @extend %transition;
+        display: none;
+
+        @media screen and (min-width: 768px) {
+            width: 10px;
+            height: 14px;
+            display: block;
+        }
+
+        @media screen and (min-width: 1280px) {
+            width: 16px;
+            height: 12px;
+        }
 
         &:hover {
-            fill: $svg-fill;
-
+            fill: $svg-hover-fill
         }
 
 
@@ -159,9 +228,19 @@
 
 
     &__svg-smartphone {
-        width: 10px;
-        height: 16px;
+        display: none;
         @extend %transition;
+
+        @media screen and (min-width: 768px) {
+            width: 10px;
+            height: 14px;
+            display: block;
+        }
+
+        @media screen and (min-width: 1280px) {
+            width: 16px;
+            height: 12px;
+        }
 
         &:hover {
             fill: $svg-hover-fill;
@@ -170,14 +249,23 @@
     }
 
     &__email {
-        color: #757575;
-        font-family: Roboto;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        letter-spacing: 0.28px;
+
+        display: none;
         @extend %transition;
+
+        @media screen and (min-width: 768px) {
+            font-weight: 500;
+            font-size: 12px;
+            letter-spacing: 0.02em;
+            color: #757575;
+            font-family: Roboto;
+            display: block;
+        }
+
+        @media screen and (min-width: 1280px) {
+            letter-spacing: 0.28px;
+            font-size: 14px;
+        }
 
 
         &:hover {
@@ -186,13 +274,22 @@
     }
 
     &__number {
-        color: #757575;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        letter-spacing: 0.28px;
+        display: none;
         @extend %transition;
+
+        @media screen and (min-width: 768px) {
+            font-weight: 500;
+            font-size: 12px;
+            letter-spacing: 0.02em;
+            color: #757575;
+            font-family: Roboto;
+            display: block;
+        }
+
+        @media screen and (min-width: 1280px) {
+            letter-spacing: 0.28px;
+            font-size: 14px;
+        }
 
         &:hover {
             color: $link-color;
@@ -202,6 +299,19 @@
             line-height: normal;
             letter-spacing: 0.28px;
         }
+    }
+
+    &__burger {
+        width: 24px;
+        height: 16px;
+        margin-left: auto;
+        background-color: transparent;
+
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+
+
     }
 }
 
