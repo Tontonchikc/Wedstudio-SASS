@@ -1,7 +1,14 @@
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background: #F5F4FA;
+
+    @media screen and (min-width: 768px) {}
+
+    @media screen and (min-width: 1280px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 
     &__title {
         @extend %title-sections;
@@ -17,23 +24,44 @@
         border-radius: 0px 0px 4px 4px;
         background: $accent-color;
         box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
+
+        @media screen and (min-width: 768px) {}
+
+        @media screen and (min-width: 1280px) {
+            padding-bottom: 24px;
+        }
+
     }
 
     &__img {
-        width: 270px;
-        height: 260px;
-        flex-shrink: 0;
+        width: 450px;
+
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            width: 270px;
+        }
+
     }
 
     &__subtitle {
         color: $title-color;
         text-align: center;
         font-size: 16px;
-        font-style: normal;
         font-weight: 500;
         line-height: normal;
-        letter-spacing: 0.48px;
         margin-top: 30px;
+        letter-spacing: 0.03em;
+
+        @media screen and (min-width: 768px) {}
+
+        @media screen and (min-width: 1280px) {
+            letter-spacing: 0.48px;
+        }
+
     }
 
 
@@ -42,9 +70,16 @@
         text-align: center;
         font-size: 16px;
         line-height: normal;
-        letter-spacing: 0.48px;
+        letter-spacing: 0.03em;
+        font-weight: 400;
         margin-top: 10px;
         margin-bottom: 16px;
+
+        @media screen and (min-width: 768px) {}
+
+        @media screen and (min-width: 1280px) {
+            letter-spacing: 0.48px;
+        }
     }
 
     &__socials {
@@ -55,7 +90,7 @@
     &__link {
         color: white;
         border-radius: 50%;
-       @include flex-position();
+        @include flex-position();
         font-size: 20px;
         @extend %transition;
 

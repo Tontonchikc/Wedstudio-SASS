@@ -2,12 +2,24 @@
     color: $title-color;
     text-align: center;
     font-family: Roboto;
-    font-size: 36px;
+    letter-spacing: 0.03em;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    letter-spacing: 1.08px;
-    margin-bottom: 50px;
+    font-size: 28px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {}
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 50px;
+        font-size: 36px;
+        letter-spacing: 1.08px;
+    }
+
+
+
+
 }
 
 %li-text {

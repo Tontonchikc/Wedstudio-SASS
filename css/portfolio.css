@@ -587,23 +587,47 @@ html {
 }
 
 .footer__logo {
-  color: #fff;
+  color: #2196f3;
   font-family: Raleway;
-  font-size: 26px;
-  font-style: normal;
+  font-size: 24px;
+  letter-spacing: 0.03em;
   font-weight: 700;
   line-height: normal;
-  letter-spacing: 0.78px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__logo {
+    letter-spacing: 0.03em;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer__logo {
+    font-size: 26px;
+    letter-spacing: 0.78px;
+  }
 }
 
 .footer__span {
-  color: #2196f3;
+  color: #fff;
   font-family: Raleway;
-  font-size: 26px;
-  font-style: normal;
+  font-size: 24px;
+  letter-spacing: 0.03em;
   font-weight: 700;
   line-height: normal;
-  letter-spacing: 0.78px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__span {
+    letter-spacing: 0.03em;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer__span {
+    font-size: 26px;
+    letter-spacing: 0.78px;
+  }
 }
 
 .footer__text {
@@ -612,22 +636,40 @@ html {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.42px;
+  line-height: 171%;
+  letter-spacing: 0.03em;
   margin-top: 20px;
   display: block;
+  text-align: center;
+}
+
+@media screen and (min-width: 1280px) {
+  .footer__text {
+    letter-spacing: 0.42px;
+    line-height: 24px;
+    text-align: right;
+  }
 }
 
 .footer__email {
   color: rgba(255, 255, 255, 0.6);
   font-family: Roboto;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.42px;
-  margin-top: 9px;
-  margin-bottom: 9px;
+  line-height: 171%;
+  letter-spacing: 0.03em;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1280px) {
+  .footer__email {
+    letter-spacing: 0.42px;
+    line-height: 24px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+  }
 }
 
 .footer__number {
@@ -635,8 +677,17 @@ html {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
   letter-spacing: 0.42px;
+  line-height: 24px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1280px) {
+  .footer__number {
+    letter-spacing: 0.42px;
+    line-height: 24px;
+    text-align: left;
+  }
 }
 
 .footer__box {
@@ -656,19 +707,38 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 70px;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__box {
+    margin-left: 162px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer__box {
+    margin-left: 70px;
+  }
 }
 
 .footer__join {
   color: #FFF;
   font-family: Roboto;
   font-size: 14px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
-  letter-spacing: 0.42px;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
+  display: block;
+}
+
+@media screen and (min-width: 1280px) {
+  .footer__join {
+    letter-spacing: 0.42px;
+  }
 }
 
 .footer__socials {
@@ -678,9 +748,16 @@ html {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .footer__link {
@@ -707,8 +784,18 @@ html {
   fill: #FFFFFF;
 }
 
-.footer__form-box {
-  margin-left: 105px;
+@media screen and (min-width: 768px) {
+  .footer__form-box {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer__form-box {
+    margin-left: 105px;
+    margin-bottom: 0;
+  }
 }
 
 .footer__title {
@@ -720,6 +807,20 @@ html {
   line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__title {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer__title {
+    margin-left: 105px;
+    margin-bottom: 0;
+  }
 }
 
 .footer__form {
