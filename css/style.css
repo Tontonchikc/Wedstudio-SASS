@@ -682,6 +682,7 @@ html {
   font-size: 26px;
   line-height: 162%;
   letter-spacing: 0.06em;
+  width: 100%;
   max-width: 360px;
   margin-left: auto;
   margin-right: auto;
@@ -707,7 +708,8 @@ html {
   margin-right: auto;
   position: relative;
   overflow: hidden;
-  width: 200px;
+  width: 100%;
+  max-width: 200px;
   height: 50px;
   color: #fff;
   font-size: 16px;
@@ -806,7 +808,8 @@ html {
 }
 
 .about__item {
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
   background-size: 70px 70px;
 }
 
@@ -829,7 +832,8 @@ html {
   background-color: #F5F4FA;
   background-position: center;
   margin-bottom: 30px;
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
   height: 120px;
 }
 
@@ -874,12 +878,8 @@ html {
   text-transform: uppercase;
   margin-bottom: 10px;
   font-weight: 700;
-}
-
-@media screen and (min-width: 768px) {
-  .about__title {
-    width: 354px;
-  }
+  width: 100%;
+  max-width: 354px;
 }
 
 @media screen and (min-width: 1280px) {
@@ -894,11 +894,12 @@ html {
   font-size: 14px;
   line-height: 171%;
   letter-spacing: 0.03em;
+  width: 100%;
+  max-width: 354px;
 }
 
 @media screen and (min-width: 768px) {
   .about__text {
-    width: 354px;
     height: 50px;
   }
 }
@@ -1122,12 +1123,12 @@ html {
 }
 
 .regular {
-  padding: 60px;
+  padding: 60px 0;
 }
 
 @media screen and (min-width: 1280px) {
   .regular {
-    padding: 94px;
+    padding: 94px 0;
   }
 }
 
@@ -1176,7 +1177,8 @@ html {
   border-radius: 4px;
   border: 1px solid #AFB1B8;
   padding: 16px 60px;
-  width: 226px;
+  width: 100%;
+  max-width: 226px;
   height: 92px;
 }
 
@@ -1332,15 +1334,6 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 0;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1370,12 +1363,12 @@ html {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
-  display: block;
 }
 
 @media screen and (min-width: 1280px) {
   .footer__join {
     letter-spacing: 0.42px;
+    text-align: left;
   }
 }
 
@@ -1443,32 +1436,34 @@ html {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  letter-spacing: 0.42px;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
-}
-
-@media screen and (min-width: 768px) {
-  .footer__title {
-    margin-right: auto;
-    margin-left: auto;
-  }
 }
 
 @media screen and (min-width: 1280px) {
   .footer__title {
-    margin-left: 105px;
-    margin-bottom: 0;
+    letter-spacing: 0.42px;
   }
 }
 
 .footer__form {
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .footer__input {
@@ -1484,20 +1479,20 @@ html {
   color: #FFF;
 }
 
-.footer::-webkit-input-placeholder {
-  padding: 12px;
+.footer__input::-webkit-input-placeholder {
+  padding-left: 12px;
 }
 
-.footer:-ms-input-placeholder {
-  padding: 12px;
+.footer__input:-ms-input-placeholder {
+  padding-left: 12px;
 }
 
-.footer::-ms-input-placeholder {
-  padding: 12px;
+.footer__input::-ms-input-placeholder {
+  padding-left: 12px;
 }
 
-.footer::placeholder {
-  padding: 12px;
+.footer__input::placeholder {
+  padding-left: 12px;
 }
 
 .footer__button {
@@ -1507,22 +1502,28 @@ html {
           box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   width: 200px;
   height: 50px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   gap: 10px;
-  padding-top: 13px;
-  padding-bottom: 13px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 28px;
   padding-right: 28px;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: 12px;
+  margin-left: 16px;
 }
 
 .footer__button-text {
@@ -1530,7 +1531,6 @@ html {
   text-align: center;
   font-family: Roboto;
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.96px;
@@ -1542,6 +1542,15 @@ html {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   fill: #FFFFFF;
+}
+
+.footer__flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
 }
 
 .backdrop {

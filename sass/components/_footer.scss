@@ -114,7 +114,9 @@
     }
 
     &__box {
-        @include flex-position($direction: column);
+        display: flex;
+        flex-direction: column;
+
         margin-bottom: 60px;
 
         @media screen and (min-width: 768px) {
@@ -137,13 +139,13 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         margin-bottom: 20px;
-        display: block;
 
 
         @media screen and (min-width: 768px) {}
 
         @media screen and (min-width: 1280px) {
             letter-spacing: 0.42px;
+            text-align: left;
         }
     }
 
@@ -179,6 +181,7 @@
     &__form-box {
         // margin-bottom: 60px;
 
+
         @media screen and (min-width: 768px) {
             margin-right: auto;
             margin-left: auto;
@@ -197,24 +200,21 @@
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        letter-spacing: 0.42px;
+        letter-spacing: 0.03em;
         text-transform: uppercase;
 
-        @media screen and (min-width: 768px) {
-            margin-right: auto;
-            margin-left: auto;
-        }
+        @media screen and (min-width: 768px) {}
 
         @media screen and (min-width: 1280px) {
-            margin-left: 105px;
-            margin-bottom: 0;
+            letter-spacing: 0.42px;
+
+
         }
     }
 
     &__form {
-        display: flex;
-        align-items: center;
         margin-top: 20px;
+        @include flex-position($horizontally: center);
     }
 
     &__input {
@@ -226,11 +226,13 @@
         background: rgba(33, 150, 243, 0.00);
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
         color: #FFF;
+
+        &::placeholder {
+            padding-left: 12px;
+        }
     }
 
-    &::placeholder {
-        padding: 12px;
-    }
+
 
     &__button {
         border-radius: 4px;
@@ -238,17 +240,13 @@
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
         width: 200px;
         height: 50px;
-        flex-shrink: 0;
-        display: flex;
-        align-items: center;
+        @include flex-position($horizontally: center);
         gap: 10px;
-        padding-top: 13px;
-        padding-bottom: 13px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         padding-left: 28px;
         padding-right: 28px;
-        margin-top: auto;
-        margin-bottom: auto;
-        margin-left: 12px;
+        margin-left: 16px;
     }
 
     &__button-text {
@@ -256,7 +254,6 @@
         text-align: center;
         font-family: Roboto;
         font-size: 16px;
-        font-style: normal;
         font-weight: 700;
         line-height: 30px;
         letter-spacing: 0.96px;
@@ -267,5 +264,10 @@
         height: 24px;
         flex-shrink: 0;
         fill: $svg-fill;
+    }
+
+    &__flex-box {
+        display: flex;
+        align-items: end;
     }
 }
