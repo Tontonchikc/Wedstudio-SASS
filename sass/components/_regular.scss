@@ -1,6 +1,8 @@
 .regular {
     padding: 60px 0;
 
+    @media screen and (min-width: 480px) {}
+
     @media screen and (min-width: 768px) {}
 
     @media screen and (min-width: 1280px) {
@@ -15,13 +17,13 @@
     &__list {
         @include flex-position($space: 30px, $wrap: wrap);
 
+        @media screen and (min-width: 480px) {}
+
         @media screen and (min-width: 768px) {
             @include flex-position($space: 30px, $wrap: wrap);
         }
 
-        @media screen and (min-width: 1280px) {
-            
-        }
+        @media screen and (min-width: 1280px) {}
     }
 
     &__image {
@@ -32,8 +34,11 @@
         width: 100%;
         max-width: 226px;
         height: 92px;
-
         @extend %transition;
+
+        @media screen and (min-width: 480px) {
+            width: 226px;
+        }
 
         @media screen and (min-width: 768px) {
             width: 210px;

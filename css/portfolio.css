@@ -57,11 +57,17 @@ body {
 }
 
 .container {
-  width: 480px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -580,10 +586,31 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .footer__logo {
@@ -593,6 +620,8 @@ html {
   letter-spacing: 0.03em;
   font-weight: 700;
   line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -698,7 +727,6 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) {
@@ -722,7 +750,9 @@ html {
   line-height: normal;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-top: 60px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 @media screen and (min-width: 1280px) {
@@ -892,8 +922,15 @@ html {
   font-family: Roboto;
   font-size: 16px;
   font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 0.96px;
+  line-height: 187%;
+  letter-spacing: 0.06em;
+}
+
+@media screen and (min-width: 1280px) {
+  .footer__button-text {
+    line-height: 30px;
+    letter-spacing: 0.96px;
+  }
 }
 
 .footer__subscribe {
@@ -908,43 +945,62 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 1280px) {
+  .footer__flex-box {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .top {
-  position: fixed;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: #F5F4FA;
-  bottom: 15px;
-  right: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 0;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-animation-name: move_top;
-          animation-name: move_top;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-direction: inherit;
-          animation-direction: inherit;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .top {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #F5F4FA;
+    bottom: 15px;
+    right: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-animation-name: move_top;
+            animation-name: move_top;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-direction: inherit;
+            animation-direction: inherit;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
 }
 
 .top__svg {
