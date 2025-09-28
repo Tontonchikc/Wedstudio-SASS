@@ -17,7 +17,21 @@
 
 
     &__nav {
-        @include flex-position();
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+
+        @media screen and (min-width: 480px) {}
+
+        @media screen and (min-width: 768px) {
+            @include flex-position();
+        }
+
+        @media screen and (min-width: 1280px) {
+            font-size: 26px;
+            letter-spacing: 0.78px;
+        }
     }
 
     &__logo {
@@ -45,7 +59,6 @@
         letter-spacing: 0.03em;
         font-weight: 700;
         line-height: normal;
-        margin-right: 276px;
 
         @media screen and (min-width: 480px) {}
 
@@ -324,11 +337,10 @@
         }
     }
 
+
+
     &__burger {
-        width: 24px;
-        height: 16px;
-        margin-left: auto;
-        background-color: transparent;
+
 
 
         @media screen and (min-width: 480px) {}
@@ -339,6 +351,21 @@
 
         @media screen and (min-width: 1280px) {}
 
+    }
+
+    &__burger-svg {
+        width: 24px;
+        height: 16px;
+        background-color: transparent;
+
+
+        @media screen and (min-width: 480px) {}
+
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+
+        @media screen and (min-width: 1280px) {}
     }
 
 }

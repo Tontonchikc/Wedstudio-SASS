@@ -13,6 +13,7 @@
 
         @media screen and (min-width: 768px) {
             @include flex-position($direction: row);
+            align-items: start;
         }
 
         @media screen and (min-width: 1280px) {}
@@ -35,12 +36,13 @@
         @media screen and (min-width: 768px) {
             letter-spacing: 0.03em;
 
+
         }
 
         @media screen and (min-width: 1280px) {
             font-size: 26px;
             letter-spacing: 0.78px;
-
+            text-align: start;
 
         }
     }
@@ -112,6 +114,7 @@
             line-height: 24px;
             margin-top: 9px;
             margin-bottom: 9px;
+            text-align: start;
         }
     }
 
@@ -138,6 +141,7 @@
     &__box {
         display: flex;
         flex-direction: column;
+        margin-top: 60px;
 
 
         @media screen and (min-width: 480px) {}
@@ -145,11 +149,13 @@
         @media screen and (min-width: 768px) {
             margin-left: 162px;
             margin-bottom: 0;
-            
+            margin-top: 0;
+
         }
 
         @media screen and (min-width: 1280px) {
             margin-left: 70px;
+
         }
 
     }
@@ -162,7 +168,7 @@
         line-height: normal;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        margin-top: 60px;
+
         margin-bottom: 20px;
         display: block;
         text-align: center;
@@ -180,14 +186,13 @@
 
     &__socials {
 
-        @include flex-position($space: 10px, $wrap: wrap, $vertical: center);
+        @include flex-position($space: 10px, $wrap: wrap);
     }
 
     &__link {
         color: $accent-color;
         border-radius: 50%;
         display: flex;
-        align-items: center;
         justify-content: center;
         font-size: 20px;
         background-color: rgba(255, 255, 255, 0.10);
@@ -210,7 +215,6 @@
     &__form-box {
 
 
-
         @media screen and (min-width: 768px) {
             margin-right: auto;
             margin-left: auto;
@@ -219,6 +223,7 @@
         @media screen and (min-width: 1280px) {
             margin-left: 105px;
             margin-bottom: 0;
+            margin-top: 0;
         }
     }
 
@@ -241,6 +246,7 @@
 
         @media screen and (min-width: 1280px) {
             letter-spacing: 0.42px;
+            text-align: start;
 
 
         }
@@ -261,9 +267,25 @@
         background: rgba(33, 150, 243, 0.00);
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
         color: #FFF;
+        width: 100%;
 
         &::placeholder {
             padding-left: 12px;
+        }
+    }
+
+    &__label {
+        width: 100%;
+        max-width: 450px;
+
+        @media screen and (min-width: 480px) {}
+
+        @media screen and (min-width: 768px) {
+            width: 450px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            width: 356px;
         }
     }
 
@@ -339,6 +361,7 @@
         @media screen and (min-width: 1280px) {
             align-items: end;
             flex-direction: row;
+            margin-top: 0;
         }
     }
 }

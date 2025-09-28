@@ -1,60 +1,123 @@
 .header {
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     border-bottom: 1px solid #ECECEC;
 
+    @media screen and (min-width: 480px) {}
+
+    @media screen and (min-width: 768px) {
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
+
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+
+        @media screen and (min-width: 480px) {}
+
+        @media screen and (min-width: 768px) {
+            @include flex-position();
+        }
+
+        @media screen and (min-width: 1280px) {
+            font-size: 26px;
+            letter-spacing: 0.78px;
+        }
+    }
+
     &__logo {
-        color: #000;
+        color: $link-color;
         font-family: Raleway;
-        font-size: 26px;
-        font-style: normal;
+        font-size: 24px;
+        letter-spacing: 0.03em;
         font-weight: 700;
         line-height: normal;
-        letter-spacing: 0.78px;
-        margin: 0 93px 0 0;
+
+        @media screen and (min-width: 480px) {}
+
+        @media screen and (min-width: 768px) {}
+
+        @media screen and (min-width: 1280px) {
+            font-size: 26px;
+            letter-spacing: 0.78px;
+        }
     }
 
     &__span {
-        color: $link-color;
+        color: #000;
         font-family: Raleway;
-        font-size: 26px;
-        font-style: normal;
+        font-size: 24px;
+        letter-spacing: 0.03em;
         font-weight: 700;
         line-height: normal;
-        letter-spacing: 0.78px;
+
+        @media screen and (min-width: 480px) {}
+
+        @media screen and (min-width: 768px) {
+            margin-right: 87px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            margin-right: 91px;
+        }
+
     }
 
-    &__nav {
-        @include flex-position();
-    }
 
 
     &__list {
-        @include flex-position($space: 50px);
+        display: none;
+
+
+        @media screen and (min-width: 480px) {}
+
+        @media screen and (min-width: 768px) {
+            @include flex-position($space: 50px);
+        }
+
+        @media screen and (min-width: 1280px) {
+            @include flex-position($space: 50px);
+        }
 
     }
 
+
     &__studio,
     &__contacts {
-        color: $title-color;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        letter-spacing: 0.28px;
-        position: relative;
+        display: none;
         @extend %transition;
+
+
+        @media screen and (min-width: 480px) {}
+
+        @media screen and (min-width: 768px) {
+            font-weight: 500;
+            font-size: 14px;
+            letter-spacing: 0.02em;
+            color: $title-color;
+            position: relative;
+            display: block;
+        }
+
+        @media screen and (min-width: 1280px) {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.28px;
+        }
 
         &:hover,
         &:hover {
             color: $link-color;
-            font-family: Roboto;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-            letter-spacing: 0.28px;
-
         }
 
         &::after,
@@ -68,26 +131,41 @@
             top: 45px;
             left: 0;
             width: 100%;
+            transform: scale(100%, 100%);
+
         }
 
         &:hover::after,
         &:hover::after {
             display: block;
-            transform: scale(100%, 100%);
         }
 
     }
 
 
     &__portfolio {
-        color: #2196F3;
+        color: $link-color;
         font-family: Roboto;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        letter-spacing: 0.28px;
         position: relative;
+
+
+
+        @media screen and (min-width: 480px) {}
+
+        @media screen and (min-width: 768px) {
+            font-weight: 500;
+            font-size: 14px;
+            letter-spacing: 0.02em;
+            color: $title-color;
+            position: relative;
+            display: block;
+            color: $link-color;
+        }
+
+        @media screen and (min-width: 1280px) {
+            letter-spacing: 0.28px;
+            color: $link-color;
+        }
 
         &::after {
             content: "";
@@ -99,87 +177,197 @@
             left: 0;
             width: 72px;
             display: block;
-        }
-    }
+            width: 100%;
 
-    &__connection {
-        @include flex-position($space: 30px);
-        margin-left: 318px;
-
-    }
-
-    &__think {
-        @include flex-position($space: 10px);
-    }
-
-    &__svg {
-        fill: #757575;
-    }
-
-    &__svg-envelope {
-        width: 16px;
-        height: 12px;
-        @extend %transition;
-
-        &:hover {
-            fill: $svg-hover-fill;
-
-        }
-    }
-
-    &__svg-smartphone {
-        width: 10px;
-        height: 16px;
-        @extend %transition;
-
-        &:hover {
-            fill: $svg-hover-fill;
 
         }
 
-    }
+        &__connection {
+            display: none;
 
-    &__email {
-        color: #757575;
-        font-family: Roboto;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        letter-spacing: 0.28px;
-        @extend %transition;
 
-        &:hover {
-            color: $link-color;
+
+            @media screen and (min-width: 480px) {}
+
+            @media screen and (min-width: 768px) {
+                @include flex-position($space: 10px, $direction: column);
+                margin-left: 96px;
+            }
+
+            @media screen and (min-width: 1280px) {
+                margin-left: 315px;
+                @include flex-position($space: 30px, $direction: row);
+            }
+
+        }
+
+        &__think {
+            display: none;
+            @extend %transition;
+
+
+            @media screen and (min-width: 480px) {}
+
+            @media screen and (min-width: 768px) {
+                @include flex-position($space: 8px);
+            }
+
+            @media screen and (min-width: 1280px) {
+                @include flex-position($space: 10px);
+            }
+
+            &:hover {
+                color: $link-color;
+
+            }
+        }
+
+        &__svg {
+            fill: #757575;
+        }
+
+        &__svg-envelope {
+
+            @extend %transition;
+            display: none;
+
+
+            @media screen and (min-width: 480px) {}
+
+            @media screen and (min-width: 768px) {
+                width: 10px;
+                height: 14px;
+                display: block;
+            }
+
+            @media screen and (min-width: 1280px) {
+                width: 16px;
+                height: 12px;
+            }
+
+
+            &:hover {
+                fill: $svg-hover-fill
+            }
+
+
+        }
+
+
+
+
+        &__svg-smartphone {
+            display: none;
+            @extend %transition;
+
+
+            @media screen and (min-width: 480px) {}
+
+            @media screen and (min-width: 768px) {
+                width: 10px;
+                height: 14px;
+                display: block;
+            }
+
+            @media screen and (min-width: 1280px) {
+                width: 16px;
+                height: 12px;
+            }
+
+            &:hover {
+                fill: $svg-hover-fill;
+
+            }
+        }
+
+        &__email {
+
+            display: none;
+            @extend %transition;
+
+
+            @media screen and (min-width: 480px) {}
+
+            @media screen and (min-width: 768px) {
+                font-weight: 500;
+                font-size: 12px;
+                letter-spacing: 0.02em;
+                color: #757575;
+                font-family: Roboto;
+                display: block;
+            }
+
+            @media screen and (min-width: 1280px) {
+                letter-spacing: 0.28px;
+                font-size: 14px;
+            }
+
+            &:hover {
+                color: $link-color;
+            }
+        }
+
+        &__number {
+            display: none;
+            @extend %transition;
+
+
+            @media screen and (min-width: 480px) {}
+
+            @media screen and (min-width: 768px) {
+                font-weight: 500;
+                font-size: 12px;
+                letter-spacing: 0.02em;
+                color: #757575;
+                font-family: Roboto;
+                display: block;
+            }
+
+            @media screen and (min-width: 1280px) {
+                letter-spacing: 0.28px;
+                font-size: 14px;
+            }
+
+            &:hover {
+                color: $link-color;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 0.28px;
+            }
+        }
+
+
+
+        &__burger {
+
+
+
+            @media screen and (min-width: 480px) {}
+
+            @media screen and (min-width: 768px) {
+                display: none;
+            }
+
+            @media screen and (min-width: 1280px) {}
+
+        }
+
+        &__burger-svg {
+            width: 24px;
+            height: 16px;
+            background-color: transparent;
+
+
+            @media screen and (min-width: 480px) {}
+
+            @media screen and (min-width: 768px) {
+                display: none;
+            }
+
+            @media screen and (min-width: 1280px) {}
         }
 
     }
-
-    &__number {
-        color: #757575;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        letter-spacing: 0.28px;
-        @extend %transition;
-
-        &:hover {
-            color: $link-color;
-        }
-    }
-
-}
-
-
-.header-svg-envelope:hover>.header-email {
-    color: #2196F3;
-    @extend %transition;
-}
-
-
-
-.header-svg-envelope:hover>.header-number {
-    color: #2196F3;
-    @extend %transition;
 }
