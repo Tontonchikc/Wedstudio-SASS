@@ -35,7 +35,7 @@
     }
 
     &__gallery {
-        @include flex-position($space: 30px);
+        @include flex-position($space: 30px, $wrap: wrap);
         margin-top: 50px;
     }
 

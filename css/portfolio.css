@@ -178,7 +178,7 @@ html {
   }
 }
 
-.header__studio, .header__contacts, .header__portfolio__think, .header__portfolio__svg-envelope, .header__portfolio__svg-smartphone, .header__portfolio__email, .header__portfolio__number, .hero__button, .hero__element, .hero__overlay, .footer__link, .top, .top__svg {
+.header__studio, .header__contacts, .header__think, .header__svg-envelope, .header__svg-smartphone, .header__email, .header__number, .hero__button, .hero__element, .hero__overlay, .footer__link, .top, .top__svg {
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-property: background-color, color, fill, border, opacity, -webkit-transform;
@@ -420,12 +420,12 @@ html {
   width: 100%;
 }
 
-.header__portfolio__connection {
+.header__connection {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .header__portfolio__connection {
+  .header__connection {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -447,7 +447,7 @@ html {
 }
 
 @media screen and (min-width: 1280px) {
-  .header__portfolio__connection {
+  .header__connection {
     margin-left: 315px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -468,12 +468,12 @@ html {
   }
 }
 
-.header__portfolio__think {
+.header__think {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .header__portfolio__think {
+  .header__think {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -494,7 +494,7 @@ html {
 }
 
 @media screen and (min-width: 1280px) {
-  .header__portfolio__think {
+  .header__think {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -514,20 +514,20 @@ html {
   }
 }
 
-.header__portfolio__think:hover {
+.header__think:hover {
   color: #2196f3;
 }
 
-.header__portfolio__svg {
+.header__svg {
   fill: #757575;
 }
 
-.header__portfolio__svg-envelope {
+.header__svg-envelope {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .header__portfolio__svg-envelope {
+  .header__svg-envelope {
     width: 10px;
     height: 14px;
     display: block;
@@ -535,22 +535,22 @@ html {
 }
 
 @media screen and (min-width: 1280px) {
-  .header__portfolio__svg-envelope {
+  .header__svg-envelope {
     width: 16px;
     height: 12px;
   }
 }
 
-.header__portfolio__svg-envelope:hover {
+.header__svg-envelope:hover {
   fill: #2196F3;
 }
 
-.header__portfolio__svg-smartphone {
+.header__svg-smartphone {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .header__portfolio__svg-smartphone {
+  .header__svg-smartphone {
     width: 10px;
     height: 14px;
     display: block;
@@ -558,22 +558,22 @@ html {
 }
 
 @media screen and (min-width: 1280px) {
-  .header__portfolio__svg-smartphone {
+  .header__svg-smartphone {
     width: 16px;
     height: 12px;
   }
 }
 
-.header__portfolio__svg-smartphone:hover {
+.header__svg-smartphone:hover {
   fill: #2196F3;
 }
 
-.header__portfolio__email {
+.header__email {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .header__portfolio__email {
+  .header__email {
     font-weight: 500;
     font-size: 12px;
     letter-spacing: 0.02em;
@@ -584,22 +584,22 @@ html {
 }
 
 @media screen and (min-width: 1280px) {
-  .header__portfolio__email {
+  .header__email {
     letter-spacing: 0.28px;
     font-size: 14px;
   }
 }
 
-.header__portfolio__email:hover {
+.header__email:hover {
   color: #2196f3;
 }
 
-.header__portfolio__number {
+.header__number {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .header__portfolio__number {
+  .header__number {
     font-weight: 500;
     font-size: 12px;
     letter-spacing: 0.02em;
@@ -610,13 +610,13 @@ html {
 }
 
 @media screen and (min-width: 1280px) {
-  .header__portfolio__number {
+  .header__number {
     letter-spacing: 0.28px;
     font-size: 14px;
   }
 }
 
-.header__portfolio__number:hover {
+.header__number:hover {
   color: #2196f3;
   font-size: 14px;
   font-style: normal;
@@ -626,19 +626,19 @@ html {
 }
 
 @media screen and (min-width: 768px) {
-  .header__portfolio__burger {
+  .header__burger {
     display: none;
   }
 }
 
-.header__portfolio__burger-svg {
+.header__burger-svg {
   width: 24px;
   height: 16px;
   background-color: transparent;
 }
 
 @media screen and (min-width: 768px) {
-  .header__portfolio__burger-svg {
+  .header__burger-svg {
     display: none;
   }
 }

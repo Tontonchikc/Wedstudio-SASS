@@ -1,0 +1,32 @@
+.menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    flex-shrink: 0;
+
+    &__button {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+                width: 40px;
+        height: 40px;
+    }
+
+    &__close {
+        outline: 1px solid red;
+
+        fill: #212121;
+        flex-shrink: 0;
+    }
+
+    &__link {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 40px;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #2196f3;
+    }
+}
