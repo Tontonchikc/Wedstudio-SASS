@@ -1,10 +1,10 @@
 .menu {
-    // position: fixed;
-    // top: 0;
-    // bottom: 0;
-    // right: 0;
-    // left: 0;
-    // flex-shrink: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    flex-shrink: 0;
 
     @media screen and (min-width: 480px) {}
 
@@ -14,7 +14,10 @@
 
     @media screen and (min-width: 1280px) {}
 
-
+    .hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
 
     &__container {
         padding: 48px 40px;
@@ -23,11 +26,11 @@
         position: relative;
     }
 
-    // &__button {
-    //     position: absolute;
-    //     top: 8px;
-    //     right: 8px;
-    // }
+    &__button {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+    }
 
     &__close {
         width: 18px;
