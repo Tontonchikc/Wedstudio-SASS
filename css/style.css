@@ -1950,11 +1950,6 @@ html {
   }
 }
 
-.menu .hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
 .menu__container {
   padding: 48px 40px;
   background-color: white;
