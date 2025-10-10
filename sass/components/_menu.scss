@@ -5,6 +5,8 @@
     right: 0;
     left: 0;
     flex-shrink: 0;
+    background-color: white;
+    z-index: 30;
 
     @media screen and (min-width: 480px) {}
 
@@ -16,7 +18,7 @@
 
     &__container {
         padding: 48px 40px;
-        background-color: white;
+
         width: 450px;
         position: relative;
     }
@@ -92,4 +94,9 @@
         color: #2196f3;
         margin-right: 10px;
     }
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
 }

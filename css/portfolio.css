@@ -178,7 +178,7 @@ html {
   }
 }
 
-.header__studio, .header__contacts, .header__think, .header__svg-envelope, .header__svg-smartphone, .header__email, .header__number, .hero__button, .hero__element, .hero__overlay, .footer__link, .top, .top__svg {
+.header__studio, .header__contacts, .header__think, .header__svg-envelope, .header__svg-smartphone, .header__email, .header__number, .hero__button, .hero__element, .hero__overlay, .footer__link, .menu__close, .menu__link, .top, .top__svg {
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-property: background-color, color, fill, border, opacity, -webkit-transform;
@@ -1268,6 +1268,117 @@ html {
             flex-direction: row;
     margin-top: 0;
   }
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background-color: white;
+  z-index: 30;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
+.menu__container {
+  padding: 48px 40px;
+  width: 450px;
+  position: relative;
+}
+
+.menu__button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.menu__close {
+  width: 18px;
+  height: 18px;
+  fill: #212121;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.menu__close:hover {
+  fill: #2196f3;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 35px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 302px;
+}
+
+.menu__link {
+  font-weight: 500;
+  font-size: 40px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.menu__link:hover {
+  color: #2196f3;
+}
+
+.menu__connection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 62px;
+}
+
+.menu__number {
+  font-weight: 500;
+  font-size: 34px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.menu__email {
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.menu__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu__add {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 122%;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  margin-right: 10px;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .top {
