@@ -673,8 +673,8 @@ html {
   background-color: #2f303a;
   padding-top: 118px;
   padding-bottom: 118px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), color-stop(10%, rgba(47, 48, 58, 0.4))), url("./images/peoples_meeting.webp");
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) 10%), url("./images/peoples_meeting.webp");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), color-stop(10%, rgba(47, 48, 58, 0.4))), url("../../images/peoples_meeting.webp");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) 10%), url("../../images/peoples_meeting.webp");
   background-repeat: no-repeat;
 }
 
@@ -875,22 +875,22 @@ html {
 
 .about__item:nth-child(1)::before {
   content: "";
-  background-image: url("./images/antenna.webp");
+  background-image: url("../../images/antenna.webp");
 }
 
 .about__item:nth-child(2)::before {
   content: "";
-  background-image: url("./images/clock.webp");
+  background-image: url("../../images/clock.webp");
 }
 
 .about__item:nth-child(3)::before {
   content: "";
-  background-image: url("./images/diagram.webp");
+  background-image: url("../../images/diagram.webp");
 }
 
 .about__item:nth-child(4)::before {
   content: "";
-  background-image: url("./images/astronaut.webp");
+  background-image: url("../../images/astronaut.webp");
 }
 
 .about__title {

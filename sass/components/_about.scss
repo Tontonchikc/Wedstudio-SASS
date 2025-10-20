@@ -72,25 +72,25 @@
 
         &:nth-child(1)::before {
             content: "";
-            background-image: url("./images/antenna.webp");
+            background-image: url("../../images/antenna.webp");
         }
 
         &:nth-child(2)::before {
             content: "";
-            background-image: url("./images/clock.webp");
+            background-image: url("../../images/clock.webp");
 
         }
 
         &:nth-child(3)::before {
             content: "";
-            background-image: url("./images/diagram.webp");
+            background-image: url("../../images/diagram.webp");
 
 
         }
 
         &:nth-child(4)::before {
             content: "";
-            background-image: url("./images/astronaut.webp");
+            background-image: url("../../images/astronaut.webp");
 
         }
     }
