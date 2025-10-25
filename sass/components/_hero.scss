@@ -2,17 +2,41 @@
     background-color: $background-color;
     padding-top: 118px;
     padding-bottom: 118px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40) 10%), url("../../images/peoples_meeting.webp");
     background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../../images/mobile/bg@mobile-1x.webp");
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url("../../images/mobile/bg@mobile-1x.webp");
+    }
 
 
     @media screen and (min-width: 480px) {}
 
-    @media screen and (min-width: 768px) {}
+
+
+    @media screen and (min-width: 768px) {
+        background-image: url("../../images/tablet/bg@tablet-1x.webp");
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url("../../images/tablet/bg@tablet-2x.webp");
+        }
+    }
 
     @media screen and (min-width: 1280px) {
         padding-top: 200px;
         padding-bottom: 200px;
+        background-image: url("../../images/desktop/bg@desktop-1x.webp");
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url("../../images/desktop/bg@desktop-2x.webp");
+        }
     }
 
     &__title {
@@ -105,5 +129,6 @@
         }
 
     }
+
 
 }
